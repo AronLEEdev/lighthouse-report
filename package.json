@@ -1,6 +1,6 @@
 {
   "name": "lighthouse-average-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple tool to run lighthouse multiple times, and generate a report with the averaged scores and metrics.",
   "main": "cli.js",
   "scripts": {
