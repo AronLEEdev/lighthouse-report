@@ -2,7 +2,7 @@ const os = require("os");
 const path = require("path");
 const fs = require("fs");
 
-const CONFIG_FILENAME = ".lighthouse-average.json";
+const CONFIG_FILENAME = "lighthouse-average.json";
 const DEFAULT_CONFIG = {
   defaultUrl: "https://google.com",
   defaultRuns: 5,
@@ -10,7 +10,7 @@ const DEFAULT_CONFIG = {
 };
 
 function getConfigFilePath() {
-  return path.join(os.homedir(), CONFIG_FILENAME);
+  return path.join(process.cwd(), CONFIG_FILENAME);
 }
 
 function ensureConfigFile() {

@@ -10,7 +10,7 @@ A robust CLI tool to run Google Lighthouse audits multiple times on a given URL,
 - Generates individual HTML reports for each run
 - Generates a summary HTML report with averages, min/max, and links to individual runs
 - Progress bar and animated spinner for audit progress
-- Supports configuration via `.lighthouse-average.json` in your home directory
+- Supports configuration via `lighthouse-average.json` in your current directory
 - Extensible and fully unit-tested utilities
 - Clean, colorful CLI output (using chalk)
 - Modular codebase for easy maintenance

@@ -64,6 +64,13 @@
     fs.mkdirSync(runDir, { recursive: true });
 
     // Run audits and save reports
+    console.log(
+      chalk.yellowBright(
+        `\nStarting ${runs} Lighthouse audit${
+          runs > 1 ? "s" : ""
+        } for: ${url}\n`
+      )
+    );
     const { results, reportTimestamps } = await runMultipleAudits(
       url,
       runs,
