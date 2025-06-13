@@ -1,0 +1,45 @@
+{
+  "name": "lighthouse-average-reporter",
+  "version": "1.0.0",
+  "description": "simple tool to run lighthouse multiple times, and generate a report with the averaged scores and metrics.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test",
+    "prepare": "npm run build || true",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AronLEEdev/lighthouse-report.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AronLEEdev/lighthouse-report/issues"
+  },
+  "homepage": "https://github.com/AronLEEdev/lighthouse-report#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "chrome-launcher": "^1.2.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.0",
+    "lighthouse": "^12.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "files": [
+    "cli.js",
+    "chrome.js",
+    "config.js",
+    "index.js",
+    "utils.js",
+    "lighthouse-averaged-template.html",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "lh-avg": "cli.js"
+  }
+}

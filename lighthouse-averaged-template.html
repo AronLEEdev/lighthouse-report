@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lighthouse Averaged Report</title>
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        background: #f8fafc;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 700px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(60, 72, 88, 0.1),
+          0 1.5px 4px rgba(60, 72, 88, 0.08);
+        padding: 2.5em 2em 2em 2em;
+      }
+      h1 {
+        color: #0c2e4e;
+        font-size: 2.2em;
+        margin-bottom: 0.2em;
+        letter-spacing: -1px;
+      }
+      .meta {
+        color: #666;
+        font-size: 1em;
+        margin-bottom: 1.5em;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+        background: #f9fbfd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(60, 72, 88, 0.04);
+      }
+      th,
+      td {
+        border: none;
+        padding: 1em 0.5em;
+        text-align: center;
+        font-size: 1.1em;
+      }
+      th {
+        background: #e8f0fe;
+        color: #174ea6;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      tr:nth-child(even) td {
+        background: #f3f6fa;
+      }
+      tr:hover td {
+        background: #e3f2fd;
+      }
+      .score {
+        font-weight: bold;
+        border-radius: 6px;
+        padding: 0.3em 0.8em;
+        display: inline-block;
+        min-width: 60px;
+      }
+      .score-high {
+        background: #e6f4ea;
+        color: #137333;
+      }
+      .score-mid {
+        background: #fffbe6;
+        color: #b26a00;
+      }
+      .score-low {
+        background: #fce8e6;
+        color: #a50e0e;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 1em;
+        }
+        h1 {
+          font-size: 1.3em;
+        }
+        th,
+        td {
+          font-size: 0.95em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lighthouse Averaged Report</h1>
+      <div class="meta">
+        <p>URL: <a id="report-url"></a></p>
+        <p>Runs: <span id="report-runs"></span></p>
+      </div>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Average Score</th>
+          <th>Min</th>
+          <th>Max</th>
+        </tr>
+        <!--REPORT_ROWS-->
+      </table>
+      <h2 style="margin-top: 2em; color: #1976d2">Averaged Detailed Metrics</h2>
+      <table>
+        <tr>
+          <th>Metric</th>
+          <th>Average Value</th>
+          <th>Min</th>
+          <th>Max</th>
+        </tr>
+        <!--DETAILED_METRICS_ROWS-->
+      </table>
+    </div>
+  </body>
+</html>
